@@ -1,0 +1,5 @@
+{
+  "name": "RentalManager",
+  "description": "A comprehensive rental management application to track electricity, water usage, and calculate monthly rent based on configurable unit prices. Supports historical records and automatic calculations.",
+  "requestFramePermissions": []
+}
