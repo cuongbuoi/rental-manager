@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { store } from './services/store';
-import { PricingConfig, RentalRecord, CalculatedRecord } from './types';
+import { Calendar, CheckCircle, Droplet, History, Home, Loader2, Plus, RefreshCw, Settings, TrendingUp, Wallet, Zap } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { PriceManager } from './components/PriceManager';
 import { RecordTable } from './components/RecordTable';
-import { LayoutDashboard, History, Plus, Settings, TrendingUp, RefreshCw, Loader2, Wallet, Zap, Droplet, Home, Calendar, CheckCircle } from 'lucide-react';
 import { isSupabaseConfigured } from './lib/supabase';
+import { store } from './services/store';
+import { CalculatedRecord, PricingConfig, RentalRecord } from './types';
 
 function App() {
   const [activeTab, setActiveTab] = useState<'records' | 'settings'>('records');
@@ -243,9 +243,6 @@ function App() {
             </div>
             <h1 className="text-xl font-bold tracking-tight text-slate-800 hidden sm:block">
               Quản Lý Tiền Cho Thuê Nhà
-            </h1>
-            <h1 className="text-lg font-bold tracking-tight text-slate-800 sm:hidden whitespace-nowrap">
-              QL Trọ
             </h1>
           </div>
           
